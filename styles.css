@@ -1,0 +1,196 @@
+/* --- Settings --- */
+:root, .utah-design-system {
+    --primary-color: #126dc4;
+    --primary-color-dark: #08355e;
+    --primary-color-light: #c3daf0;
+    --gray-on-primary-color: #474747;
+
+    --secondary-color: #5c35a7;
+    --secondary-color-dark: #3d236e;
+    --secondary-color-light: #d6cce9;
+    --gray-on-secondary-color: #474747;
+
+    --accent-color: #45C6FF;
+    --accent-color-dark: #237da1;
+    --accent-color-light: #d2ecfa;
+    --gray-on-accent-color: #3f3f3f;
+
+    --gray-color: #474747;
+    --gray-medium-color: #616161;
+    --gray-3-1-color: #949494;
+    --gray-medium-light-color: #d7d7d7;
+    --gray-light-color: #f1f1f1;
+    --gray-dark-color: #333333;
+
+    --hover-gray-color: rgba(0, 0, 0, 0.07);
+    --hover-gray-color-opaque: rgba(233, 233, 233);
+
+    --header-primary-color: var(--primary-color);
+    --link-color: var(--primary-color);
+    --link-color-dark: var(--primary-color-dark);
+
+    --form-checkbox-small: 0.875rem;
+    --form-checkbox-medium: 1.125rem;
+    --form-checkbox-large: 1.375rem;
+
+    --form-ele-color: #2765e4;
+    --form-ele-color-light: #7aa0ee;
+    --form-ele-disabled-color: var(--gray-3-1-color);
+
+    --icon-check-mark-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12.15'%3E%3Cg%3E%3Cpath d='M6.185,12.15L0,5.966,2.335,3.631l3.85,3.849L13.665,0l2.335,2.335L6.185,12.15Z' style='fill: %23fff;'/%3E%3C/g%3E%3C/svg%3E");
+
+    /* transition timings */
+    --timing-xquick: 100ms;
+    --timing-quick: 200ms;
+    --timing-medium: 400ms;
+    --timing-slow: 600ms;
+
+    --content-width-small: 800px;
+    --content-width-medium: 1000px;
+
+    --spacing-l: 24px;
+
+    --font-size-3xl: 2rem;
+    --font-weight-bold: 700;
+
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* --- Hero --- */
+.hero {
+    z-index: 1;
+    position: relative;
+}
+
+.hero-bg, .hero-bg-layer-lower-image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.hero-bg-layer-lower-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 0;
+    min-height: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.hero-spacer {
+    flex-basis: calc(20% - clamp(0px, 0px, 9999px));
+    height: 200px;
+}
+
+.hero-content {
+    flex-basis: calc(80% - clamp(0px, 0px, 9999px));
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content > div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+    display: flex;
+}
+
+.hero-svg-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.hero-svg-wrapper svg {
+    height: 100%;
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.hero-headline {
+    width: 80%;
+    padding: var(--spacing-l);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: right;
+    color: white;
+    font-family: inherit;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+/* --- Content --- */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Forms --- */
+.search-form-input-wrapper {
+    position: relative;
+}
+
+.search-form-input-wrapper input.search-modal__input[type=text] {
+    border-radius: 999px;
+    font-size: 1rem;
+    border: 1px solid var(--gray-color);
+    width: 100%;
+}
+
+/* --- Components --- */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card__title {
+    font-size: var(--font-size-3xl);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+    box-sizing: border-box;
+}
+
+.card__title--full {
+    width: 100%;
+}
+
+.card--align-flex-start {
+    align-items: flex-start;
+}
