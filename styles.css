@@ -178,19 +178,34 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    border: 1px solid #707070;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 10px 0 #47474733;
 }
 
-.card__title {
-    font-size: var(--font-size-3xl);
-    text-transform: uppercase;
+.card .card__title {
+    font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     box-sizing: border-box;
 }
 
-.card__title--full {
-    width: 100%;
+.card__content {
+    display: flex;
+    flex-direction: column;
 }
 
 .card--align-flex-start {
     align-items: flex-start;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.card button {
+    align-self: flex-end;
 }
