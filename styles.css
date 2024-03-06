@@ -49,6 +49,7 @@
     --content-width-medium: 1000px;
 
     --spacing-l: 24px;
+    --spacing-xl: 32px;
 
     --font-size-3xl: 2rem;
     --font-weight-bold: 700;
@@ -209,3 +210,116 @@
 .card button {
     align-self: flex-end;
 }
+
+/* --- Footer --- */
+.footer__social {
+    display: flex;
+    color: white;
+    font-weight: 400;
+    background: var(--primary-color);
+}
+
+.footer__social:before{
+    flex-basis: 32px;
+    width: 32px !important;
+    height: 32px;
+    content: "";
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+a.footer__social-icon:hover {
+    background: rgb(0 0 0 / 20%);
+    box-shadow: none !important;
+}
+
+.footer__social-icon svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__content-wrapper {
+    background: var(--gray-color);
+    color: white;
+}
+
+.footer__columns {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer__logo {
+    width: 250px;
+    display: inline-block;
+}
+
+.footer__logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer__division {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    white-space: nowrap;
+}
+
+.footer__column {
+    font-size: 0.875rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+.footer__column:first-child {
+    margin-left: 0;
+}
+
+.footer__column:last-child {
+    margin-right: 0;
+}
+
+.footer__column a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.footer__column a:hover {
+    box-shadow: none !important;
+}
+
+.footer__column a:not(.footer__logo):hover {
+    text-decoration: underline;
+}
+
+.footer__column ul, .footer__column li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__column-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/* --- Utilities --- */
+.p-spacing-xl { padding: var(--spacing-xl); }
