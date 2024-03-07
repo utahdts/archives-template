@@ -16,4 +16,4 @@ Department of Government Operations - Division of Archives and Records Services 
 
 ### License
 
-[STATE OF UTAH: MEMORANDUM OF AGREEMENT TO TRANSFER SOFTWARE](https://github.com/utahdts/archives-template/tree/master/LICENSE)
+[STATE OF UTAH: MEMORANDUM OF AGREEMENT TO TRANSFER SOFTWARE](https://github.com/utahdts/archives-template/tree/master/LICENSE.txt)
