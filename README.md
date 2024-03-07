@@ -14,3 +14,6 @@ Department of Government Operations - Division of Technology Services - [dts.uta
 
 Department of Government Operations - Division of Archives and Records Services - [archives.utah.gov](https://archives.utah.gov/).
 
+### License
+
+[STATE OF UTAH: MEMORANDUM OF AGREEMENT TO TRANSFER SOFTWARE](https://github.com/utahdts/utah-design-system/tree/main/LICENSE)
