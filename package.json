@@ -1,6 +1,10 @@
 {
-  "name": "archives-template",
+  "name": "design-system-static-template",
   "version": "1.0.0",
   "dependencies": {
+    "http-server": "14.1.1"
+  },
+  "scripts": {
+    "serve": "npx http-server"
   }
 }
